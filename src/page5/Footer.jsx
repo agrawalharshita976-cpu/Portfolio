@@ -19,12 +19,12 @@ const Footer = () => {
 
             <ul className="mt-4 space-y-3">
               <li>
-                <a href="/" className="text-sm hover:text-blue-400">
+                <a href="/Hero" className="text-sm hover:text-blue-400">
                   Home
                 </a>
               </li>
               <li>
-                <a href="/about" className="text-sm hover:text-blue-400">
+                <a href="/About" className="text-sm hover:text-blue-400">
                   About
                 </a>
               </li>
@@ -34,7 +34,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/contact" className="text-sm hover:text-blue-400">
+                <a href="/Contact" className="text-sm hover:text-blue-400">
                   Contact
                 </a>
               </li>

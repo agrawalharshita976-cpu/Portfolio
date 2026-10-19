@@ -15,10 +15,10 @@ const NavBar = () => {
   }, []);
 
   const navLinks = [
-    { name: "Home", href: "#" },
+    { name: "Home", href: "#hero" },
     { name: "Projects", href: "#projects" },
     { name: "Resume", href: "/resume.pdf" },
-    { name: "Contact", href: "#contact" },
+    { name: "Contact", href: "#Contact" },
     { name: "About", href: "#About" },
   ];
 
