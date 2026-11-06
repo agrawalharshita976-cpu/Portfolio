@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-serif-italic: 'Instrument Serif', Georgia, serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #08080a;
+    color: #f4f4f5;
+    overflow-x: hidden;
+  }
+}
+
+.font-serif-italic {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-style: italic;
+}
+
+.font-mono-tech {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Background Grid Pattern */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+}
+
+.bg-grid-glow {
+  background: radial-gradient(circle 500px at 50% 250px, rgba(251, 191, 36, 0.05), transparent 80%),
+              radial-gradient(circle 800px at 50% 300px, rgba(255, 255, 255, 0.03), transparent 70%);
+}
+
+/* Custom corner bracket styles matching Atelier UI */
+.bracket-box {
+  position: relative;
+  display: inline-block;
+}
+
+.bracket-tl {
+  position: absolute;
+  top: -6px;
+  left: -8px;
+  width: 14px;
+  height: 14px;
+  border-top: 2px solid rgba(255, 255, 255, 0.7);
+  border-left: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.bracket-tr {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  width: 14px;
+  height: 14px;
+  border-top: 2px solid rgba(255, 255, 255, 0.7);
+  border-right: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.bracket-bl {
+  position: absolute;
+  bottom: -6px;
+  left: -8px;
+  width: 14px;
+  height: 14px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  border-left: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.bracket-br {
+  position: absolute;
+  bottom: -6px;
+  right: -8px;
+  width: 14px;
+  height: 14px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  border-right: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #08080a;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
